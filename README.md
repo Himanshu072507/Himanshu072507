@@ -19,6 +19,9 @@ Translates real-time AQI numbers into "should I go for a run right now?" answers
 ### [Voice RAG Agent](https://github.com/Himanshu072507/voice-rag-agent)
 Voice-in, voice-out RAG over uploaded documents. Hybrid retrieval (BM25 + dense embeddings, fused via RRF) with Cohere reranking; Cerebras Llama 3.1 for generation. Includes a hand-rolled eval harness with golden Q&A and per-question scoring.
 
+### [Diet Planner](https://github.com/Himanshu072507/diet-planner)
+Three-agent Streamlit prototype (Analyzer → Diet Planner → Workout Planner) that builds a personalized nutrition + workout plan from a user profile, with a mid-pipeline choice between three diet directions. Groq Llama 3.3 70B with an 8B fallback.
+
 ### Sentry PM Dashboard
 A PM-first refreshable view over Sentry errors — health status, punch list, release verdict, and a daily "your actions today" panel. Streamlit + Sentry REST API + optional Gemini for cluster narratives. 64 tests, rule-based fallbacks when no LLM key is set.
 
@@ -27,9 +30,6 @@ Personal credit card spend tracker. Next.js (App Router) + Supabase + Recharts. 
 
 ### Resume Templates
 Static HTML/CSS/JS resume builder — six templates across Professional and Creative styles, live preview editor, Firebase auth, Firestore save, PDF export. No build step, no framework.
-
-### Diet Planner
-Three-agent Streamlit prototype (Analyzer → Diet Planner → Workout Planner) that builds a personalized nutrition + workout plan from a user profile, with a mid-pipeline choice between three diet directions. Groq Llama 3.3 70B with an 8B fallback.
 
 ### IVR Survey Agent
 Outbound IVR for survey collection — calls Indian mobile numbers, collects DTMF responses, runs two parallel Gemini agents (analyzer + summarizer) over the results. Next.js + Supabase + Twilio with a free mock telephony mode for dev.
